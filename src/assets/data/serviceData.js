@@ -1,25 +1,25 @@
 const serviceData = [
   {
     icon: "ri-truck-line",
-    title: "Free Shipping",
-    subtitle: "Lorem ipsum dolor sit amet.",
+    title: "Shipping Available",
+    subtitle: "Free delivery within the Nairobi Metropolis",
     bg: "#fdefe6",
   },
   {
-    icon: "ri-refresh-line",
-    title: "Easy Returns",
+    icon: "ri-restart-fill",
+    title: "Facelift available",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#ceebe9",
   },
   {
     icon: "ri-secure-payment-line",
-    title: "Secure Payment",
+    title: "Flexible Payment Plans",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#e2f2b2",
   },
   {
-    icon: "ri-exchange-dollar-line",
-    title: " Back Guarantee",
+    icon: "ri-thumb-up-fill",
+    title: " Quality Guaranteed",
     subtitle: "Lorem ipsum dolor sit amet.",
     bg: "#d6e5fb",
   },
