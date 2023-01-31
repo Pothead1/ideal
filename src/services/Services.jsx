@@ -9,17 +9,21 @@ const Services = () => {
     <Container>
         <Row>
             {
-                serviceData.map((item,index)=>(
+                serviceData.map((item, index)=>(
                     <Col lg='3' md='4' key={index}>
-                       <div
+                       <motion.div
+                       whileHover={{scale: 1.2}}
                        className='service_item' 
+// eslint-disable-next-line
                        style={{background: '${item.bg}'}}>
-                         <span><i class={item.icon}></i></span>
+                         <span>
+                          <i class={item.icon}></i>
+                          </span>
                             <div>
                                <h3>{item.title}</h3>
                                <p>{item.subtitle}</p>
                            </div>
-                       </div>
+                       </motion.div>
                    </Col>
                 ))
             }

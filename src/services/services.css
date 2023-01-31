@@ -5,6 +5,7 @@
     align-items: center;
     border-radius: 5px;
     cursor: pointer;
+    color: aliceblue;
 }
 .service_item span i{
     font-size: 2.2rem;
