@@ -29,8 +29,7 @@ const Header = () => {
             <div className="logo">
               <img src={logo} alt="logo" />
               <div>
-                <h1>Ideal Furniture & Decor</h1>
-                <p><i>Comfort in Style</i></p>
+                <h1>Ideal - <i>Comfort in Style</i></h1>
               </div>
             </div>
               <div className="navigation">

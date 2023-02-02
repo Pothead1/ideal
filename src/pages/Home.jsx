@@ -15,7 +15,9 @@ import Clock from '../componets/UI/Clock'
 const Home = () => {
  const [trendingProducts, setTrendingProducts] = useState([])
  const [bestSalesProducts, setBestSalesProducts] = useState([])
-
+ const [mobileProducts, setMobileProducts] = useState([])
+ const [wirelessProducts, setWirelessProducts] = useState([])
+ const [popularProducts, setPopularProducts] = useState([])
 
  const year = new Date().getFullYear()
  
@@ -24,10 +26,25 @@ const Home = () => {
     item=>item.category === 'chair')
   
   const filteredBestSalesProducts = products.filter(
-      item=>item.category === 'sofa')  
+      item=>item.category === 'sofa') 
+  
+  const filteredMobileProducts = products.filter(
+        item=>item.category === 'mobile')
+   
+  const filteredWirelessProducts = products.filter(
+          item=>item.category === 'wireless') 
+
+  const filteredPopularProducts = products.filter(
+            item=>item.category === 'watch')             
+   
+      
 
     setTrendingProducts(filteredTrendingProducts)
     setBestSalesProducts(filteredBestSalesProducts)
+    setMobileProducts(filteredMobileProducts)
+    setWirelessProducts(filteredWirelessProducts)
+    setPopularProducts(filteredPopularProducts)
+  
  }, []) 
 
 
@@ -90,7 +107,28 @@ const Home = () => {
         </Row>
       </Container>
     </section>
-    
+
+    <section className="new_arrivals">
+      <Container>
+        <Row>
+          <Col lg='12' className='text-center' mb-5>
+            <h2 className="section_title">New Arrivals</h2>
+          </Col>
+          <ProductList data = {mobileProducts} />
+          <ProductList data = {wirelessProducts}/> 
+        </Row>
+      </Container>
+    </section>
+    <section className="popular_category">
+    <Container>
+        <Row>
+          <Col lg='12' className='text-center' mb-5>
+            <h2 className="section_title">Popular</h2>
+          </Col>
+          <ProductList data = {popularProducts} />
+        </Row>
+      </Container>
+    </section>
   </Helmet>
 }
 
